@@ -1,0 +1,16 @@
+  <div class="row">
+    <div *ngFor="let gifs of respuesta"
+    class="col-md-4 col-ms-6 animate__animated animate__flipInX">
+    <div class="card">
+      <img [src]="gifs.images.downsized_medium.url"
+            [alt]="gifs.title"
+            class="card-img-top"
+            height="300">
+      <div class="card-body">
+        <p class="card-text">
+           {{ gifs.title }}
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
